@@ -183,7 +183,7 @@ public class Main {
     public static int checkUpperCaseLowerCase(String pass) {
         boolean upper=false;
         boolean lower=false;
-        for (int i=1; i < pass.length(); i++) {
+        for (int i=0; i < pass.length(); i++) {
             char c= pass.charAt(i);
             if (Character.isUpperCase(c)) {
                 upper= true;
@@ -203,7 +203,7 @@ public class Main {
         int first=0;
         int second=1;
         System.out.println("fibonacci sequence:");
-        for (int i=1; i<n; i++) {
+        for (int i=0; i<n; i++) {
             System.out.print(first+ " ");
             int next= first + second;
             first=second;
